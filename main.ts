@@ -1,8 +1,11 @@
-// FUNCTION SIGNATURE
+import { Invoice } from "./classImplementInterface";
+import { hasPrint } from "./interfaceForClass";
 
-let greet: Function
-greet = () => {
-    console.log('Hello World');
-}
+const documentOne:hasPrint = new Invoice('Vina milk','drink milk',5000000)
+const documentTwo:hasPrint = new Invoice('Vietnam Airlines','fly',25000000)
 
-greet()
+const allDocuments: hasPrint[] =[]
+allDocuments.push(documentOne)
+allDocuments.push(documentTwo)
+
+console.log(allDocuments);

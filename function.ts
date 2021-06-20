@@ -1,20 +1,20 @@
 // FUNCTION
 
 const square = (side: number) => side * side;
-
 console.log(square(3));
 
-let greet : function 
-greet =()=> console.log('Hello EveryOne');
+let greet: Function
+greet = () => console.log('Hello EveryOne');
 greet()
 
-const add = (a: number, b: number, c?: number|string) =>{
-    console.log(a+b);
+const add = (a: number, b: number, c?: number | string) => {
+    console.log(a + b);
     console.log(c);
 }
 
-console.log(add(5,6,7));
-console.log(add(5,6,'Tuan'));
+add(5, 6, 7)
+add(5, 6, 'Tuan')
+add(5, 6)
 
 const addDefault = (a: number, b: number, c: number | string = 10) => {
     console.log(a + b);
@@ -22,7 +22,8 @@ const addDefault = (a: number, b: number, c: number | string = 10) => {
 }
 
 addDefault(5, 5, 'Ngoc Tuan');
+addDefault(5, 5);
 
-const minus = (a: number, b: number):number => a + b;
+const minus = (a: number, b: number): number => a + b;
 
 console.log(minus(5, 5))
